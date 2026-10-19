@@ -4,3 +4,5 @@ psycopg[binary]
 python-dotenv
 scikit-learn
 groq
+fastapi
+uvicorn[standard]
