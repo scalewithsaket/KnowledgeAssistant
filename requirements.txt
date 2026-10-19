@@ -1,0 +1,6 @@
+pypdf
+sentence-transformers
+psycopg[binary]
+python-dotenv
+scikit-learn
+groq
