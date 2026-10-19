@@ -1,5 +1,5 @@
 """
-LLM client class for Groq API
+LLM client class for Groq API. Calls the Groq chat completion API.
 """
 from groq import Groq
 from app.core.config import settings

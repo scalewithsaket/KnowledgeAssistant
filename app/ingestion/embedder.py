@@ -1,5 +1,5 @@
 """
-Embbedder component - Generate normalized text embeddings through the embedding model.
+Creates normalized embeddings using Sentence Transformers.
 With embeddings, we can retrieve based on intent, paraphrase, and conceptual similarity.
 """
 from sentence_transformers import SentenceTransformer

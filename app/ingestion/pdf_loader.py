@@ -1,3 +1,6 @@
+"""
+Extracts text from PDF pages while preserving page boundaries.
+"""
 from pathlib import Path
 from pypdf import PdfReader
 

@@ -1,3 +1,6 @@
+"""
+Splits extracted text into logical chunks based on section headings.
+"""
 import re
 
 SECTION_PATTERN = re.compile(r"^\d+\.\s+.+$")

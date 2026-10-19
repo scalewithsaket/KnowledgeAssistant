@@ -1,5 +1,5 @@
 """
-prompt builder utility
+Constructs the final system and user prompts sent to the LLM.
 """
 
 SYSTEM_PROMPT = """

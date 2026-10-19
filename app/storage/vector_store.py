@@ -1,5 +1,5 @@
 """
-Vector DB provider utility
+Stores embeddings and runs similarity search with pgvector.
 """
 import psycopg
 from app.core.config import settings
