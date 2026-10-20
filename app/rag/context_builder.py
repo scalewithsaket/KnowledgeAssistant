@@ -3,6 +3,9 @@ Formats the retrieved chunks into a prompt-compatible context string.
 """
 
 def build_context(results: list[dict]) -> str:
+    """
+    Formats the retrieved chunks into a prompt-compatible context string.
+    """
     context_parts = []
 
     for index, result in enumerate(results, start=1):
