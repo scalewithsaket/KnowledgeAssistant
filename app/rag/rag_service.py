@@ -6,6 +6,7 @@ from app.storage.vector_store import search_similar
 from app.rag.context_builder import build_context
 from app.rag.prompt_builder import SYSTEM_PROMPT, build_user_prompt
 from app.llm.groq_client import GroqClient
+from app.core.config import settings
 
 class RAGService:
     """
@@ -25,6 +26,17 @@ class RAGService:
 
         # 2. Retrieve relevant document chunks
         results = search_similar(query_embedding=query_embedding, top_k=top_k)
+
+        if not results or results[0]["distance"] > settings.retrieval_distance_threshold:
+            return {
+                "question": question,
+                "answer": (
+                    "I don't have sufficient information to answer "
+                    "this question from the available documents."
+                ),
+                "context": "",
+                "sources": [],
+            }
 
         # 3. Build context from retrieved chunks
         context = build_context(results)

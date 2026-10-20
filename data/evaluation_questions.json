@@ -1,0 +1,52 @@
+
+[
+  {
+    "id": "Q01",
+    "question": "How many casual leaves can an employee take?",
+    "category": "answerable",
+    "expected_sections": [
+      "2. Leave Entitlements",
+      "4. Leave Rules"
+    ]
+  },
+  {
+    "id": "Q02",
+    "question": "How many days of sick leave do employees receive?",
+    "category": "answerable",
+    "expected_sections": [
+      "2. Leave Entitlements"
+    ]
+  },
+  {
+    "id": "Q03",
+    "question": "Can unused casual leave be carried forward?",
+    "category": "answerable",
+    "expected_sections": [
+      "2. Leave Entitlements",
+      "5. Carry Forward"
+    ]
+  },
+  {
+    "id": "Q04",
+    "question": "How far in advance should planned leave be requested?",
+    "category": "answerable",
+    "expected_sections": [
+      "3. Requesting Leave"
+    ]
+  },
+  {
+    "id": "Q05",
+    "question": "Do we have a coffee vending machine in the cafeteria?",
+    "category": "unsupported",
+    "expected_sections": []
+  },
+  {
+    "id": "Q06",
+    "question": "How many casual leaves can I take, and is there a coffee machine in the cafeteria?",
+    "category": "partially_answerable",
+    "expected_sections": [
+      "2. Leave Entitlements",
+      "4. Leave Rules"
+    ]
+  }
+]

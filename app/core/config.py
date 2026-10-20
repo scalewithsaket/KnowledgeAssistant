@@ -7,7 +7,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Settings:
-    """Application configuration loaded from environment variables."""
+    """
+    Application configuration loaded from environment variables.
+    """
 
     def __init__(self):
         # LLM CONFIGURATION
@@ -23,6 +25,7 @@ class Settings:
         self.db_name = os.getenv("DB_NAME", "ragdb")
         self.db_user = os.getenv("DB_USER", "raguser")
         self.db_password = os.getenv("DB_PASSWORD")
+
         # EMBEDDING CONFIGURATION
         self.embedding_model = os.getenv(
             "EMBEDDING_MODEL",
@@ -37,5 +40,9 @@ class Settings:
         self.llm_top_p = float(os.getenv("LLM_TOP_P", "1"))
         self.llm_reasoning_effort = os.getenv("LLM_REASONING_EFFORT", "medium")
         self.llm_stream = os.getenv("LLM_STREAM", "false").lower() == "true"
+
+        # RETRIEVAL CONFIGURATION
+        self.retrieval_distance_threshold = float(
+            os.getenv("RETRIEVAL_DISTANCE_THRESHOLD", "0.80"))
 
 settings = Settings()
