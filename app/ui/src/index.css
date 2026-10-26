@@ -88,7 +88,7 @@ a:focus-visible {
 }
 
 .brand-light {
-  color: #768076;
+  color: #5b7da8;
   font-weight: 500;
 }
 
@@ -96,7 +96,7 @@ a:focus-visible {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #707a70;
+  color: #5b7da8;
   font-size: 12px;
   font-weight: 500;
 }
@@ -105,7 +105,7 @@ a:focus-visible {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #62a47c;
+  background: #5b7da8;
   box-shadow: 0 0 0 3px #e7f1e6;
 }
 
@@ -133,7 +133,8 @@ a:focus-visible {
 .eyebrow-line {
   width: 20px;
   height: 1px;
-  background: #78a78a;
+  background: #5b7da8;
+  color: #5b7da8;
 }
 
 h1 {
@@ -147,14 +148,14 @@ h1 {
 }
 
 h1 span {
-  color: #758175;
+  color: #5b7da8;
   font-weight: 400;
 }
 
 .intro-copy {
   max-width: 470px;
   margin: 0;
-  color: #737c73;
+  color: #5b7da8;
   font-size: 13px;
   line-height: 1.6;
 }
@@ -170,7 +171,7 @@ h1 span {
 .question-card label {
   display: block;
   margin-bottom: 8px;
-  color: #354039;
+  color: #5b7da8;
   font-size: 12px;
   font-weight: 700;
 }
@@ -373,6 +374,7 @@ h1 span {
     transform: translateY(5px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -439,6 +441,7 @@ h1 span {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {

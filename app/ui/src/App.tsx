@@ -76,7 +76,7 @@ function App() {
               <path d="M11 12.5c1.4-.1 2.65.25 3.7 1.05M21 12.5c-1.4-.1-2.65.25-3.7 1.05" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
             </svg>
           </span>
-          <span>Knowledge<span className="brand-light">Assistant</span></span>
+          <span><span className="brand-light">Knowledge Assistant</span></span>
         </a>
         <div className="topbar-note">
           <span className="status-dot" />
@@ -90,8 +90,8 @@ function App() {
             <span className="eyebrow-line" />
             YOUR KNOWLEDGE, IN CONTEXT
           </div>
-          <h1 id="page-title">
-            Good questions
+          <h1>
+            <span>Good questions</span>
             <br />
             <span>find their answers.</span>
           </h1>
