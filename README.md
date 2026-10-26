@@ -191,6 +191,30 @@ This script performs the following:
 4. creates the final prompt for the LLM
 5. asks Groq for a grounded answer
 
+## Running the Web UI
+
+Start the API from the repository root:
+
+```bash
+uvicorn app.api.main:app --reload
+```
+
+In another terminal, install the UI dependencies and start Vite:
+
+```bash
+cd app/ui
+npm install
+npm run dev
+```
+
+Copy `app/ui/.env.example` to `app/ui/.env`, then configure the API address:
+
+```env
+RAG_API_URL=http://127.0.0.1:8000
+```
+
+The React app runs at `http://127.0.0.1:5173` and calls the API directly on its separate port. The API allows requests from the local Vite origins `http://127.0.0.1:5173` and `http://localhost:5173`. The UI sends questions to `POST /query` and displays only the returned answer.
+
 ## Important Modules
 
 ### `app.ingestion.pdf_loader`
