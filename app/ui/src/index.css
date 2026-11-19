@@ -141,7 +141,7 @@ h1 {
   margin: 14px 0 9px;
   color: var(--ink);
   font-family: "Manrope", sans-serif;
-  font-size: clamp(36px, 5vw, 46px);
+  font-size: clamp(30px, 5vw, 30px);
   font-weight: 600;
   letter-spacing: -2.2px;
   line-height: 1.08;
@@ -153,10 +153,10 @@ h1 span {
 }
 
 .intro-copy {
-  max-width: 470px;
+  max-width: 600px;
   margin: 0;
   color: #5b7da8;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.6;
 }
 
@@ -450,4 +450,8 @@ h1 span {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+.button-text {
+  font-size: 16px;
 }

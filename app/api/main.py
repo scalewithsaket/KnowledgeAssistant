@@ -3,8 +3,8 @@ RAG API
 """
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
 
+from app.api.schemas import QueryRequest, QueryResponse
 from app.rag.rag_service import RAGService
 
 
@@ -26,20 +26,6 @@ app.add_middleware(
 )
 
 rag_service = RAGService()
-
-class QueryRequest(BaseModel):
-    """
-    Query Request Data Model
-    """
-    question: str
-
-class QueryResponse(BaseModel):
-    """
-    Query Reponse Data Model
-    """
-    question: str
-    answer: str
-    sources: list[dict]
 
 @app.get("/health")
 def health():

@@ -80,7 +80,7 @@ function App() {
         </a>
         <div className="topbar-note">
           <span className="status-dot" />
-          Grounded in your knowledge base
+          Grounded in knowledge base
         </div>
       </header>
 
@@ -88,15 +88,13 @@ function App() {
         <div className="intro">
           <div className="eyebrow">
             <span className="eyebrow-line" />
-            YOUR KNOWLEDGE, IN CONTEXT
+            KNOWLEDGE SOURCE, IN CONTEXT
           </div>
           <h1>
-            <span>Good questions</span>
-            <br />
-            <span>find their answers.</span>
+            <span>Good questions find their answers.</span>
           </h1>
           <p className="intro-copy">
-            Ask about your documents. Get a clear answer, grounded in the information that matters.
+            Ask about your policies. Get a clear answer, grounded in the information that matters.
           </p>
         </div>
 
@@ -112,7 +110,7 @@ function App() {
             disabled={isLoading}
           />
           <div className="form-footer">
-            <span className="input-hint">Answers are generated from your connected documents.</span>
+            <span className="input-hint">Answers are generated from the connected documents.</span>
             <button type="submit" disabled={!question.trim() || isLoading}>
               {isLoading ? (
                 <>
@@ -121,7 +119,7 @@ function App() {
                 </>
               ) : (
                 <>
-                  Ask assistant
+                  <span className="button-text">Ask Sage</span>
                   <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
                     <path d="M4 10h11m-4-4 4 4-4 4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
